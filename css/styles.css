@@ -4,7 +4,49 @@
 }
 body {
   font-size: 16px;
+  font-family: sans-serif;
 }
 header {
   background-color: #000;
+}
+header .main-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header .main-nav .ico-burger-open {
+  display: block;
+  width: 30px;
+  height: auto;
+  padding: 1rem;
+}
+header .main-nav .translate {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: url("../img/header-bg.png");
+  transition: right 0.5s ease;
+}
+header .main-nav .translate .ico-burger-close {
+  display: block;
+  padding: 0.6rem;
+}
+header .main-nav .translate li {
+  list-style-type: none;
+}
+header .main-nav .translate li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 3rem;
+}
+header .main-nav .translate.close {
+  right: -100%;
+}
+header .main-nav .translate.open {
+  right: 0;
 }
