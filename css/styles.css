@@ -133,3 +133,49 @@ footer div .link {
   color: #c0c0c0;
   padding: 2.5rem 1rem 2rem 1rem;
 }
+@media screen and (min-width: 980px) {
+  header .main-nav .ico-burger-open {
+    display: none;
+  }
+  header .main-nav .translate {
+    height: 55px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    transition: none;
+  }
+  header .main-nav .translate .ico-burger-close {
+    display: none;
+  }
+  header .main-nav .translate li {
+    margin: 0 0.8rem;
+  }
+  .first-section {
+display-flex
+    justify-content: space-around;
+  }
+  .first-section article {
+    width: 45%;
+  }
+  .first-section article p {
+    text-align: left;
+  }
+  .first-section picture {
+    width: 45%;
+  }
+  section .para-align-left picture {
+    float: left;
+  }
+  footer small {
+    display: block;
+    color: #c0c0c0;
+    text-align: center;
+    padding: 2rem 0 0 0;
+  }
+  footer div ul {
+    width: 30%;
+  }
+  footer div .link {
+    width: 30%;
+  }
+}
