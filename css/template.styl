@@ -7,16 +7,20 @@ body
 	font-family sans-serif
 	max-width 1200px
 	margin 0 auto
+	background-color black
 
 main
 	padding-top 55px
 	
 section 
-	h1
-		background-image url("../img/header-bg.png")
-		img
-			width 100%
-			height auto
+	&.first
+		background url("../img/header-bg.png") center no-repeat fixed
+		h1
+			img
+				width 100%
+				height auto
+	&.second
+		background-color white
 	h2
 		font-size 1.2rem
 		text-align center
@@ -40,7 +44,7 @@ section
 	width 100%
 	height auto
 
-.division
+.last
 	position relative
 	height 250px
 	.storm

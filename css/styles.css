@@ -7,16 +7,20 @@ body {
   font-family: sans-serif;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #000;
 }
 main {
   padding-top: 55px;
 }
-section h1 {
-  background-image: url("../img/header-bg.png");
+section.first {
+  background: url("../img/header-bg.png") center no-repeat fixed;
 }
-section h1 img {
+section.first h1 img {
   width: 100%;
   height: auto;
+}
+section.second {
+  background-color: #fff;
 }
 section h2 {
   font-size: 1.2rem;
@@ -45,11 +49,11 @@ section ul {
   width: 100%;
   height: auto;
 }
-.division {
+.last {
   position: relative;
   height: 250px;
 }
-.division .storm {
+.last .storm {
   position: absolute;
   right: 0;
   overflow: hidden;
@@ -103,8 +107,8 @@ header .main-nav .translate.open {
   right: 0;
 }
 footer {
-  background-image: url("../img/darthvader.jpg");
-  background-size: 100% auto;
+  background: url("../img/darthvader.jpg") center no-repeat fixed;
+  background-size: auto 100%;
 }
 footer small {
   display: none;
@@ -148,6 +152,7 @@ footer div .link {
     display: flex;
     justify-content: center;
     transition: none;
+    background-image: none;
   }
   header .main-nav .translate .ico-burger-close {
     display: none;
@@ -155,21 +160,24 @@ footer div .link {
   header .main-nav .translate li {
     margin: 0 0.8rem;
   }
-  .first-section {
+  .first {
 display-flex
     justify-content: space-around;
   }
-  .first-section article {
+  .first article {
     width: 45%;
   }
-  .first-section article p {
+  .first article p {
     text-align: left;
   }
-  .first-section picture {
+  .first picture {
     width: 45%;
   }
   section .para-align-left picture {
     float: left;
+  }
+  .last .storm {
+    width: 100%;
   }
   footer small {
     display: block;

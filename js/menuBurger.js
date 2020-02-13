@@ -10,7 +10,7 @@ $(function() {
 		$('.translate').removeClass('open');
 	});
 
-	$('main-nav a').on('click', function() {
+	$('.main-nav a').on('click', function() {
 		$('.translate').addClass('close');
 		$('.translate').removeClass('open');
 	});
